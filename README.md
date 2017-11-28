@@ -48,7 +48,9 @@ Run:
 ``` 
 $./stack 
 ```
+
 This will take a 15 - 40 minutes, largely depending on the speed of your internet connection. Many git trees and packages will be installed during this process.
+
 If all goes fine you should get the success message and URL to open Horizon UI.
 
 # Configurations
