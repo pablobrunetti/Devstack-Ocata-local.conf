@@ -43,9 +43,11 @@ Fill in these fields with your credentials:
 ADMIN_PASSWORD= <your_password>
 HOST_IP= <your_IP>
 
-## Start the install
+## Start the stack
 Run:
-``` $./install ```
+``` 
+$./stack 
+```
 This will take a 15 - 40 minutes, largely depending on the speed of your internet connection. Many git trees and packages will be installed during this process.
 If all goes fine you should get the success message and URL to open Horizon UI.
 
@@ -55,14 +57,20 @@ To run clients as a specific project and user, you can simply load the associate
 
 In Devstack horizon, download file Openstack RC v3, project admin e send for folder devstack
 Run:
-``` $ source admin-openrc.sh ```
+``` 
+$ source admin-openrc.sh 
+```
 
 ## Gnocchi
 Run:
-``` export OS_AUTH_TYPE=password ```
+``` 
+export OS_AUTH_TYPE=password 
+```
 
 Test gnocchi with command: 
-``` gnocchi metric list ```
+``` 
+gnocchi metric list
+```
 A list of metrics will appear in bash
 
 ## Support Grafana
@@ -79,7 +87,9 @@ Restart grafana
 
 # Execution grafana
 In browser run:
-```http://<your_IP>:3000```
+```
+http://<your_IP>:3000
+```
 Create your first datasource
 ![alt text](https://github.com/pablobrunetti/Devstack-Ocata-local.conf/blob/master/datasource__grafana.png)
 
