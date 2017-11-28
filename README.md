@@ -37,6 +37,60 @@ You can quickly create a separate stack user to run DevStack with
     $ cd devstack
 ```    
 ## Create a local.conf
+Create a local.conf in source devstack
+A model is in github. 
+Fill in these fields with your credentials:
+ADMIN_PASSWORD= <your_password>
+HOST_IP= <your_IP>
+
+## Start the install
+Run:
+``` $./install ```
+This will take a 15 - 40 minutes, largely depending on the speed of your internet connection. Many git trees and packages will be installed during this process.
+If all goes fine you should get the success message and URL to open Horizon UI.
+
+# Configurations
+## Admin-openrc
+To run clients as a specific project and user, you can simply load the associated client environment script prior to running them. 
+
+In Devstack horizon, download file Openstack RC v3, project admin e send for folder devstack
+Run:
+``` $ source admin-openrc.sh ```
+
+## Gnocchi
+Run:
+``` export OS_AUTH_TYPE=password ```
+
+Test gnocchi with command: 
+``` gnocchi metric list ```
+A list of metrics will appear in bash
+
+## Support Grafana
+Run:
+```
+wget https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana_4.6.2_amd64.deb
+sudo apt-get install -y adduser libfontconfig
+sudo dpkg -i grafana_4.6.2_amd64.deb
+```
+Install plugin gnocchi-grafana
+```grafana-cli plugins install gnocchixyz-gnocchi-datasource```
+Restart grafana
+```sudo service grafana-server restart```
+
+# Execution grafana
+In browser run:
+```http://<your_IP>:3000```
+Create your first datasource
+![alt text](https://github.com/pablobrunetti/Devstack-Ocata-local.conf/blob/master/datasource__grafana.png)
+
+
+
+
+
+
+
+
+
 
 
 
