@@ -39,8 +39,11 @@ You can quickly create a separate stack user to run DevStack with
 ## Create a local.conf
 Create a local.conf in source devstack
 A model is in github. 
+
 Fill in these fields with your credentials:
+
 ADMIN_PASSWORD= <your_password>
+
 HOST_IP= <your_IP>
 
 ## Start the stack
