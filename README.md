@@ -86,8 +86,11 @@ sudo apt-get install -y adduser libfontconfig
 sudo dpkg -i grafana_4.6.2_amd64.deb
 ```
 Install plugin gnocchi-grafana
+
 ```grafana-cli plugins install gnocchixyz-gnocchi-datasource```
+
 Restart grafana
+
 ```sudo service grafana-server restart```
 
 # Execution grafana
