@@ -39,8 +39,8 @@ You can quickly create a separate stack user to run DevStack with
 ``` 
 
 ## Create a local.conf
-Create a local.conf in source devstack
-A model is in github. 
+Create a local.conf in folder devstack
+A model is in github. Copy the local.conf in anex github and make next steps  
 
 Fill in these fields with your credentials:
 
