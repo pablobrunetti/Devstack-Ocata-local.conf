@@ -33,9 +33,11 @@ You can quickly create a separate stack user to run DevStack with
 ```
 
 ## Download DevStack
-``` $  git clone https://git.openstack.org/openstack-dev/devstack -b stable/ocata
+```  
+    $ git clone https://git.openstack.org/openstack-dev/devstack -b stable/ocata
     $ cd devstack
-```    
+``` 
+
 ## Create a local.conf
 Create a local.conf in source devstack
 A model is in github. 
