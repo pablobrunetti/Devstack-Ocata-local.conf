@@ -48,6 +48,20 @@ ADMIN_PASSWORD= <your_password>
 
 HOST_IP= <your_IP>
 
+## UPDATE
+
+The database gnocchi is not working for version Ocata. 
+
+https://ask.openstack.org/en/question/111528/gnocchi-triggering-keystone-error/
+
+Use the version Pike https://github.com/pablobrunetti/Devstack-Pike-local.conf  or update the database for mongodb in local.conf:
+
+```
+CEILOMETER_BACKEND=mongodb
+``` 
+
+
+
 ## Start the stack
 Run:
 ``` 
