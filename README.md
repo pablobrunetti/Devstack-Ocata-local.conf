@@ -1,5 +1,5 @@
 # Devstack-Ocata-local.conf
-This repository contains a local.conf script which can be used to create a devstack Ocata setup. The monitoring modules of the Devstack is working(Gnocchi + ceilometer + AODH). 
+This repository contains a local.conf script which can be used to create a devstack Ocata setup. The monitoring modules of the Devstack is working(Mongodb + ceilometer + AODH). 
 
 # Pre-requisites
 Start with a clean and minimal install of a Linux system. Devstack attempts to support Ubuntu 16.04/17.04, Fedora 24/25, CentOS/RHEL 7, as well as Debian and OpenSUSE.
