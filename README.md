@@ -115,7 +115,7 @@ In browser run:
 http://<your_IP>:3000
 ```
 Create your first datasource
-![alt text](https://github.com/pablobrunetti/Devstack-Ocata-local.conf/blob/master/datasource__grafana.png)
+![alt text](https://github.com/pablobrunetti/Devstack-Ocata-local.conf/blob/master/datasource_grafana_pike.png)
 
 
 
